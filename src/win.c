@@ -5,6 +5,7 @@
 #include <allegro.h>
 #include <winalleg.h>
 #include <process.h>
+#include <commdlg.h>
 #include "resources.h"
 
 #include "b-em.h"

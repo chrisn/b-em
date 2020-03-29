@@ -14,21 +14,21 @@
     <ProjectGuid>{28E2DE55-0A88-47FA-92DC-3F96D72608F9}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>bem</RootNamespace>
-    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -52,41 +52,41 @@
     <ClCompile>
       <PrecompiledHeader>
       </PrecompiledHeader>
-      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <WarningLevel>Level4</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>HAVE_SLEEP;HAVE_WINDOWS_H;HAVE_STDINT_H;HAVE_STAT;ALLEGRO_SRC;ALLEGRO_NO_ASM;WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <UndefinePreprocessorDefinitions>UNICODE;_UNICODE;%(UndefinePreprocessorDefinitions)</UndefinePreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\allegro\include;..\..\zlib\1.2.3\zlib-1.2.3;..\..\freealut\include;C:\Program Files (x86)\OpenAL 1.1 SDK\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>allegro\include;zlib;freealut\include;C:\Program Files\OpenAL 1.1 SDK\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>alld.lib;zlibd.lib;OpenAL32.lib;alut.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>..\..\allegro\lib\msvc;..\..\zlib\1.2.3\zlib-1.2.3\projects\visualc6\Win32_LIB_Debug;..\..\freealut\admin\VisualStudioDotNET\alut\Debug;C:\Program Files (x86)\OpenAL 1.1 SDK\libs\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>OpenAL32.lib;winmm.lib;dinput8.lib;ddraw.lib;dxguid.lib;dsound.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Program Files\OpenAL 1.1 SDK\libs\Win32;C:\Program Files\Microsoft DirectX SDK (August 2009)\Lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <WarningLevel>Level4</WarningLevel>
       <PrecompiledHeader>
       </PrecompiledHeader>
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>HAVE_SLEEP;HAVE_WINDOWS_H;HAVE_STDINT_H;HAVE_STAT;ALLEGRO_SRC;ALLEGRO_NO_ASM;WIN32;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <UndefinePreprocessorDefinitions>UNICODE;_UNICODE;%(UndefinePreprocessorDefinitions)</UndefinePreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
-      <AdditionalIncludeDirectories>..\..\allegro\include;..\..\zlib\1.2.3\zlib-1.2.3;..\..\freealut\include;C:\Program Files (x86)\OpenAL 1.1 SDK\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>allegro\include;zlib;freealut\include;C:\Program Files\OpenAL 1.1 SDK\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>alleg.lib;zlib.lib;OpenAL32.lib;alut.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>OpenAL32.lib;winmm.lib;dinput8.lib;ddraw.lib;dxguid.lib;dsound.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>MSVCRTD.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
-      <AdditionalLibraryDirectories>..\..\allegro\lib\msvc;..\..\zlib\1.2.3\zlib-1.2.3\projects\visualc6\Win32_LIB_Release;..\..\freealut\admin\VisualStudioDotNET\alut\Release;C:\Program Files (x86)\OpenAL 1.1 SDK\libs\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Program Files\OpenAL 1.1 SDK\libs\Win32;C:\Program Files\Microsoft DirectX SDK (August 2009)\Lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -97,6 +97,7 @@
     <ClInclude Include="acia.h" />
     <ClInclude Include="adc.h" />
     <ClInclude Include="adf.h" />
+    <ClInclude Include="allegro\src\win\wddraw.h" />
     <ClInclude Include="arm.h" />
     <ClInclude Include="b-em.h" />
     <ClInclude Include="bbctext.h" />
@@ -111,6 +112,7 @@
     <ClInclude Include="disc.h" />
     <ClInclude Include="fdi.h" />
     <ClInclude Include="fdi2raw.h" />
+    <ClInclude Include="freealut\src\alutInternal.h" />
     <ClInclude Include="i8271.h" />
     <ClInclude Include="ide.h" />
     <ClInclude Include="keyboard.h" />
@@ -163,6 +165,134 @@
     <ClCompile Include="acia.c" />
     <ClCompile Include="adc.c" />
     <ClCompile Include="adf.c" />
+    <ClCompile Include="allegro\src\allegro.c" />
+    <ClCompile Include="allegro\src\blit.c" />
+    <ClCompile Include="allegro\src\bmp.c" />
+    <ClCompile Include="allegro\src\clip3d.c" />
+    <ClCompile Include="allegro\src\clip3df.c" />
+    <ClCompile Include="allegro\src\colblend.c" />
+    <ClCompile Include="allegro\src\color.c" />
+    <ClCompile Include="allegro\src\config.c" />
+    <ClCompile Include="allegro\src\c\cblit16.c" />
+    <ClCompile Include="allegro\src\c\cblit24.c" />
+    <ClCompile Include="allegro\src\c\cblit32.c" />
+    <ClCompile Include="allegro\src\c\cblit8.c" />
+    <ClCompile Include="allegro\src\c\ccpu.c" />
+    <ClCompile Include="allegro\src\c\ccsprite.c" />
+    <ClCompile Include="allegro\src\c\cgfx15.c" />
+    <ClCompile Include="allegro\src\c\cgfx16.c" />
+    <ClCompile Include="allegro\src\c\cgfx24.c" />
+    <ClCompile Include="allegro\src\c\cgfx32.c" />
+    <ClCompile Include="allegro\src\c\cgfx8.c" />
+    <ClCompile Include="allegro\src\c\cmisc.c" />
+    <ClCompile Include="allegro\src\c\cscan15.c" />
+    <ClCompile Include="allegro\src\c\cscan16.c" />
+    <ClCompile Include="allegro\src\c\cscan24.c" />
+    <ClCompile Include="allegro\src\c\cscan32.c" />
+    <ClCompile Include="allegro\src\c\cscan8.c" />
+    <ClCompile Include="allegro\src\c\cspr15.c" />
+    <ClCompile Include="allegro\src\c\cspr16.c" />
+    <ClCompile Include="allegro\src\c\cspr24.c" />
+    <ClCompile Include="allegro\src\c\cspr32.c" />
+    <ClCompile Include="allegro\src\c\cspr8.c" />
+    <ClCompile Include="allegro\src\c\cstretch.c" />
+    <ClCompile Include="allegro\src\c\czscan15.c" />
+    <ClCompile Include="allegro\src\c\czscan16.c" />
+    <ClCompile Include="allegro\src\c\czscan24.c" />
+    <ClCompile Include="allegro\src\c\czscan32.c" />
+    <ClCompile Include="allegro\src\c\czscan8.c" />
+    <ClCompile Include="allegro\src\datafile.c" />
+    <ClCompile Include="allegro\src\dataregi.c" />
+    <ClCompile Include="allegro\src\digmid.c" />
+    <ClCompile Include="allegro\src\dispsw.c" />
+    <ClCompile Include="allegro\src\dither.c" />
+    <ClCompile Include="allegro\src\drvlist.c" />
+    <ClCompile Include="allegro\src\file.c" />
+    <ClCompile Include="allegro\src\fli.c" />
+    <ClCompile Include="allegro\src\flood.c" />
+    <ClCompile Include="allegro\src\font.c" />
+    <ClCompile Include="allegro\src\fontbios.c" />
+    <ClCompile Include="allegro\src\fontbmp.c" />
+    <ClCompile Include="allegro\src\fontdat.c" />
+    <ClCompile Include="allegro\src\fontgrx.c" />
+    <ClCompile Include="allegro\src\fonttxt.c" />
+    <ClCompile Include="allegro\src\fsel.c" />
+    <ClCompile Include="allegro\src\gfx.c" />
+    <ClCompile Include="allegro\src\glyph.c" />
+    <ClCompile Include="allegro\src\graphics.c" />
+    <ClCompile Include="allegro\src\gsprite.c" />
+    <ClCompile Include="allegro\src\gui.c" />
+    <ClCompile Include="allegro\src\guiproc.c" />
+    <ClCompile Include="allegro\src\inline.c" />
+    <ClCompile Include="allegro\src\joystick.c" />
+    <ClCompile Include="allegro\src\keyboard.c" />
+    <ClCompile Include="allegro\src\lbm.c" />
+    <ClCompile Include="allegro\src\libc.c" />
+    <ClCompile Include="allegro\src\lzss.c" />
+    <ClCompile Include="allegro\src\math.c" />
+    <ClCompile Include="allegro\src\math3d.c" />
+    <ClCompile Include="allegro\src\midi.c" />
+    <ClCompile Include="allegro\src\misc\ccolconv.c" />
+    <ClCompile Include="allegro\src\misc\colconv.c" />
+    <ClCompile Include="allegro\src\mixer.c" />
+    <ClCompile Include="allegro\src\modesel.c" />
+    <ClCompile Include="allegro\src\mouse.c" />
+    <ClCompile Include="allegro\src\pcx.c" />
+    <ClCompile Include="allegro\src\poly3d.c" />
+    <ClCompile Include="allegro\src\polygon.c" />
+    <ClCompile Include="allegro\src\quantize.c" />
+    <ClCompile Include="allegro\src\quat.c" />
+    <ClCompile Include="allegro\src\readbmp.c" />
+    <ClCompile Include="allegro\src\readfont.c" />
+    <ClCompile Include="allegro\src\readsmp.c" />
+    <ClCompile Include="allegro\src\rle.c" />
+    <ClCompile Include="allegro\src\rotate.c" />
+    <ClCompile Include="allegro\src\scene3d.c" />
+    <ClCompile Include="allegro\src\sound.c" />
+    <ClCompile Include="allegro\src\spline.c" />
+    <ClCompile Include="allegro\src\stream.c" />
+    <ClCompile Include="allegro\src\text.c" />
+    <ClCompile Include="allegro\src\tga.c" />
+    <ClCompile Include="allegro\src\timer.c" />
+    <ClCompile Include="allegro\src\unicode.c" />
+    <ClCompile Include="allegro\src\vtable.c" />
+    <ClCompile Include="allegro\src\vtable15.c" />
+    <ClCompile Include="allegro\src\vtable16.c" />
+    <ClCompile Include="allegro\src\vtable24.c" />
+    <ClCompile Include="allegro\src\vtable32.c" />
+    <ClCompile Include="allegro\src\vtable8.c" />
+    <ClCompile Include="allegro\src\win\gdi.c" />
+    <ClCompile Include="allegro\src\win\wddaccel.c" />
+    <ClCompile Include="allegro\src\win\wddbmp.c" />
+    <ClCompile Include="allegro\src\win\wddbmpl.c" />
+    <ClCompile Include="allegro\src\win\wddfull.c" />
+    <ClCompile Include="allegro\src\win\wddlock.c" />
+    <ClCompile Include="allegro\src\win\wddmode.c" />
+    <ClCompile Include="allegro\src\win\wddovl.c" />
+    <ClCompile Include="allegro\src\win\wddraw.c" />
+    <ClCompile Include="allegro\src\win\wddwin.c" />
+    <ClCompile Include="allegro\src\win\wdispsw.c" />
+    <ClCompile Include="allegro\src\win\wdsinput.c" />
+    <ClCompile Include="allegro\src\win\wdsndmix.c" />
+    <ClCompile Include="allegro\src\win\wdsound.c" />
+    <ClCompile Include="allegro\src\win\wdxver.c" />
+    <ClCompile Include="allegro\src\win\wfile.c" />
+    <ClCompile Include="allegro\src\win\wgdi.c" />
+    <ClCompile Include="allegro\src\win\wgfxdrv.c" />
+    <ClCompile Include="allegro\src\win\winput.c" />
+    <ClCompile Include="allegro\src\win\wjoydrv.c" />
+    <ClCompile Include="allegro\src\win\wjoydx.c" />
+    <ClCompile Include="allegro\src\win\wjoyhelp.c" />
+    <ClCompile Include="allegro\src\win\wjoyw32.c" />
+    <ClCompile Include="allegro\src\win\wkeybd.c" />
+    <ClCompile Include="allegro\src\win\wmidi.c" />
+    <ClCompile Include="allegro\src\win\wmouse.c" />
+    <ClCompile Include="allegro\src\win\wsnddrv.c" />
+    <ClCompile Include="allegro\src\win\wsndwo.c" />
+    <ClCompile Include="allegro\src\win\wsystem.c" />
+    <ClCompile Include="allegro\src\win\wthread.c" />
+    <ClCompile Include="allegro\src\win\wtimer.c" />
+    <ClCompile Include="allegro\src\win\wwnd.c" />
     <ClCompile Include="arm.c" />
     <ClCompile Include="cmos.c" />
     <ClCompile Include="compactcmos.c" />
@@ -174,6 +304,16 @@
     <ClCompile Include="disc.c" />
     <ClCompile Include="fdi.c" />
     <ClCompile Include="fdi2raw.c" />
+    <ClCompile Include="freealut\src\alutBufferData.c" />
+    <ClCompile Include="freealut\src\alutCodec.c" />
+    <ClCompile Include="freealut\src\alutError.c" />
+    <ClCompile Include="freealut\src\alutInit.c" />
+    <ClCompile Include="freealut\src\alutInputStream.c" />
+    <ClCompile Include="freealut\src\alutLoader.c" />
+    <ClCompile Include="freealut\src\alutOutputStream.c" />
+    <ClCompile Include="freealut\src\alutUtil.c" />
+    <ClCompile Include="freealut\src\alutVersion.c" />
+    <ClCompile Include="freealut\src\alutWaveform.c" />
     <ClCompile Include="i8271.c" />
     <ClCompile Include="ide.c" />
     <ClCompile Include="keyboard.c" />
@@ -224,6 +364,19 @@
     <ClCompile Include="win.c" />
     <ClCompile Include="x86.c" />
     <ClCompile Include="z80.c" />
+    <ClCompile Include="zlib\adler32.c" />
+    <ClCompile Include="zlib\crc32.c" />
+    <ClCompile Include="zlib\deflate.c" />
+    <ClCompile Include="zlib\gzclose.c" />
+    <ClCompile Include="zlib\gzlib.c" />
+    <ClCompile Include="zlib\gzread.c" />
+    <ClCompile Include="zlib\gzwrite.c" />
+    <ClCompile Include="zlib\inffast.c" />
+    <ClCompile Include="zlib\inflate.c" />
+    <ClCompile Include="zlib\inftrees.c" />
+    <ClCompile Include="zlib\trees.c" />
+    <ClCompile Include="zlib\uncompr.c" />
+    <ClCompile Include="zlib\zutil.c" />
   </ItemGroup>
   <ItemGroup>
     <None Include="b-em.ico" />

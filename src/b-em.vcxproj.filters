@@ -13,6 +13,30 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\allegro">
+      <UniqueIdentifier>{6441764c-c927-4939-bc9f-48d4aa07e85e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\allegro\src">
+      <UniqueIdentifier>{43b6335c-413b-4768-ad3b-597ff22df3d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\zlib">
+      <UniqueIdentifier>{a7007feb-a790-4be0-9795-226513e83ace}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\freealut">
+      <UniqueIdentifier>{6d50e9a4-d039-42aa-91b2-b4c74e39fcd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\freealut\src">
+      <UniqueIdentifier>{66d79721-46fc-4418-bcd4-dcc48f52d14f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\allegro\src\win">
+      <UniqueIdentifier>{3c4d9f6f-11ec-4e46-9304-08fb0703ee23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\allegro\src\c">
+      <UniqueIdentifier>{ba385420-4c12-4be1-86a9-b5008b6f9431}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\allegro\src\misc">
+      <UniqueIdentifier>{0931edfb-62b7-4f32-a510-3b6af297ffbf}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resid-fp\envelope.h">
@@ -197,6 +221,12 @@
     </ClInclude>
     <ClInclude Include="z80.h">
       <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="freealut\src\alutInternal.h">
+      <Filter>Source Files\freealut\src</Filter>
+    </ClInclude>
+    <ClInclude Include="allegro\src\win\wddraw.h">
+      <Filter>Source Files\allegro\src\win</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -408,6 +438,459 @@
     </ClCompile>
     <ClCompile Include="resid-fp\wave.cc">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\allegro.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\blit.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\bmp.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\clip3d.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\clip3df.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\colblend.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\color.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\config.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\datafile.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\dataregi.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\digmid.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\dispsw.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\dither.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\drvlist.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\file.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\fli.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\flood.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\font.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\fontbios.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\fontbmp.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\fontdat.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\fontgrx.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\fonttxt.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\fsel.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\gfx.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\glyph.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\graphics.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\gsprite.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\gui.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\guiproc.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\inline.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\joystick.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\keyboard.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\lbm.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\libc.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\lzss.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\math.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\math3d.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\midi.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\mixer.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\modesel.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\mouse.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\pcx.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\poly3d.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\polygon.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\quantize.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\quat.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\readbmp.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\readfont.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\readsmp.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\rle.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\rotate.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\scene3d.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\sound.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\spline.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\stream.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\text.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\tga.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\timer.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\unicode.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\vtable.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\vtable8.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\vtable15.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\vtable16.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\vtable24.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\vtable32.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="freealut\src\alutBufferData.c">
+      <Filter>Source Files\freealut\src</Filter>
+    </ClCompile>
+    <ClCompile Include="freealut\src\alutCodec.c">
+      <Filter>Source Files\freealut\src</Filter>
+    </ClCompile>
+    <ClCompile Include="freealut\src\alutError.c">
+      <Filter>Source Files\freealut\src</Filter>
+    </ClCompile>
+    <ClCompile Include="freealut\src\alutInit.c">
+      <Filter>Source Files\freealut\src</Filter>
+    </ClCompile>
+    <ClCompile Include="freealut\src\alutInputStream.c">
+      <Filter>Source Files\freealut\src</Filter>
+    </ClCompile>
+    <ClCompile Include="freealut\src\alutLoader.c">
+      <Filter>Source Files\freealut\src</Filter>
+    </ClCompile>
+    <ClCompile Include="freealut\src\alutOutputStream.c">
+      <Filter>Source Files\freealut\src</Filter>
+    </ClCompile>
+    <ClCompile Include="freealut\src\alutUtil.c">
+      <Filter>Source Files\freealut\src</Filter>
+    </ClCompile>
+    <ClCompile Include="freealut\src\alutVersion.c">
+      <Filter>Source Files\freealut\src</Filter>
+    </ClCompile>
+    <ClCompile Include="freealut\src\alutWaveform.c">
+      <Filter>Source Files\freealut\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\gzread.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\gzclose.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\uncompr.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\inflate.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\adler32.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\crc32.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\inffast.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\inftrees.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\zutil.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\gzlib.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\win\gdi.c">
+      <Filter>Source Files\allegro\src\win</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\win\wddaccel.c">
+      <Filter>Source Files\allegro\src\win</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\win\wddbmp.c">
+      <Filter>Source Files\allegro\src\win</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\win\wddbmpl.c">
+      <Filter>Source Files\allegro\src\win</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\win\wddfull.c">
+      <Filter>Source Files\allegro\src\win</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\win\wddlock.c">
+      <Filter>Source Files\allegro\src\win</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\win\wddmode.c">
+      <Filter>Source Files\allegro\src\win</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\win\wddovl.c">
+      <Filter>Source Files\allegro\src\win</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\win\wddraw.c">
+      <Filter>Source Files\allegro\src\win</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\win\wddwin.c">
+      <Filter>Source Files\allegro\src\win</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\win\wdispsw.c">
+      <Filter>Source Files\allegro\src\win</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\win\wdsinput.c">
+      <Filter>Source Files\allegro\src\win</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\win\wdsndmix.c">
+      <Filter>Source Files\allegro\src\win</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\win\wdsound.c">
+      <Filter>Source Files\allegro\src\win</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\win\wdxver.c">
+      <Filter>Source Files\allegro\src\win</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\win\wfile.c">
+      <Filter>Source Files\allegro\src\win</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\win\wgdi.c">
+      <Filter>Source Files\allegro\src\win</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\win\wgfxdrv.c">
+      <Filter>Source Files\allegro\src\win</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\win\winput.c">
+      <Filter>Source Files\allegro\src\win</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\win\wjoydrv.c">
+      <Filter>Source Files\allegro\src\win</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\win\wjoydx.c">
+      <Filter>Source Files\allegro\src\win</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\win\wjoyhelp.c">
+      <Filter>Source Files\allegro\src\win</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\win\wjoyw32.c">
+      <Filter>Source Files\allegro\src\win</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\win\wkeybd.c">
+      <Filter>Source Files\allegro\src\win</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\win\wmidi.c">
+      <Filter>Source Files\allegro\src\win</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\win\wmouse.c">
+      <Filter>Source Files\allegro\src\win</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\win\wsnddrv.c">
+      <Filter>Source Files\allegro\src\win</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\win\wsndwo.c">
+      <Filter>Source Files\allegro\src\win</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\win\wsystem.c">
+      <Filter>Source Files\allegro\src\win</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\win\wthread.c">
+      <Filter>Source Files\allegro\src\win</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\win\wtimer.c">
+      <Filter>Source Files\allegro\src\win</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\win\wwnd.c">
+      <Filter>Source Files\allegro\src\win</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\c\cblit8.c">
+      <Filter>Source Files\allegro\src\c</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\c\cblit16.c">
+      <Filter>Source Files\allegro\src\c</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\c\cblit24.c">
+      <Filter>Source Files\allegro\src\c</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\c\cblit32.c">
+      <Filter>Source Files\allegro\src\c</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\c\ccpu.c">
+      <Filter>Source Files\allegro\src\c</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\c\ccsprite.c">
+      <Filter>Source Files\allegro\src\c</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\c\cgfx8.c">
+      <Filter>Source Files\allegro\src\c</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\c\cgfx15.c">
+      <Filter>Source Files\allegro\src\c</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\c\cgfx16.c">
+      <Filter>Source Files\allegro\src\c</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\c\cgfx24.c">
+      <Filter>Source Files\allegro\src\c</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\c\cgfx32.c">
+      <Filter>Source Files\allegro\src\c</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\c\cmisc.c">
+      <Filter>Source Files\allegro\src\c</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\c\cscan8.c">
+      <Filter>Source Files\allegro\src\c</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\c\cscan15.c">
+      <Filter>Source Files\allegro\src\c</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\c\cscan16.c">
+      <Filter>Source Files\allegro\src\c</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\c\cscan24.c">
+      <Filter>Source Files\allegro\src\c</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\c\cscan32.c">
+      <Filter>Source Files\allegro\src\c</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\c\cspr8.c">
+      <Filter>Source Files\allegro\src\c</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\c\cspr15.c">
+      <Filter>Source Files\allegro\src\c</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\c\cspr16.c">
+      <Filter>Source Files\allegro\src\c</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\c\cspr24.c">
+      <Filter>Source Files\allegro\src\c</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\c\cspr32.c">
+      <Filter>Source Files\allegro\src\c</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\c\cstretch.c">
+      <Filter>Source Files\allegro\src\c</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\c\czscan8.c">
+      <Filter>Source Files\allegro\src\c</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\c\czscan15.c">
+      <Filter>Source Files\allegro\src\c</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\c\czscan16.c">
+      <Filter>Source Files\allegro\src\c</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\c\czscan24.c">
+      <Filter>Source Files\allegro\src\c</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\c\czscan32.c">
+      <Filter>Source Files\allegro\src\c</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\misc\colconv.c">
+      <Filter>Source Files\allegro\src\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\misc\ccolconv.c">
+      <Filter>Source Files\allegro\src\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\gzwrite.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\deflate.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\trees.c">
+      <Filter>Source Files\zlib</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

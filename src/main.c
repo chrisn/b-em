@@ -4,6 +4,7 @@
 #include <allegro.h>
 #ifdef WIN32
 #include <winalleg.h>
+#include <mmsystem.h>
 #endif
 #include <stdio.h>
 #include <stdlib.h>
