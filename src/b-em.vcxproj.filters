@@ -442,6 +442,18 @@
     <ClCompile Include="allegro\src\allegro.c">
       <Filter>Source Files\allegro\src</Filter>
     </ClCompile>
+    <ClCompile Include="allegro\src\allegro_config.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\allegro_keyboard.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\allegro_sound.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
+    <ClCompile Include="allegro\src\allegro_mouse.c">
+      <Filter>Source Files\allegro\src</Filter>
+    </ClCompile>
     <ClCompile Include="allegro\src\blit.c">
       <Filter>Source Files\allegro\src</Filter>
     </ClCompile>
@@ -458,9 +470,6 @@
       <Filter>Source Files\allegro\src</Filter>
     </ClCompile>
     <ClCompile Include="allegro\src\color.c">
-      <Filter>Source Files\allegro\src</Filter>
-    </ClCompile>
-    <ClCompile Include="allegro\src\config.c">
       <Filter>Source Files\allegro\src</Filter>
     </ClCompile>
     <ClCompile Include="allegro\src\datafile.c">
@@ -535,9 +544,6 @@
     <ClCompile Include="allegro\src\joystick.c">
       <Filter>Source Files\allegro\src</Filter>
     </ClCompile>
-    <ClCompile Include="allegro\src\keyboard.c">
-      <Filter>Source Files\allegro\src</Filter>
-    </ClCompile>
     <ClCompile Include="allegro\src\lbm.c">
       <Filter>Source Files\allegro\src</Filter>
     </ClCompile>
@@ -560,9 +566,6 @@
       <Filter>Source Files\allegro\src</Filter>
     </ClCompile>
     <ClCompile Include="allegro\src\modesel.c">
-      <Filter>Source Files\allegro\src</Filter>
-    </ClCompile>
-    <ClCompile Include="allegro\src\mouse.c">
       <Filter>Source Files\allegro\src</Filter>
     </ClCompile>
     <ClCompile Include="allegro\src\pcx.c">
@@ -596,9 +599,6 @@
       <Filter>Source Files\allegro\src</Filter>
     </ClCompile>
     <ClCompile Include="allegro\src\scene3d.c">
-      <Filter>Source Files\allegro\src</Filter>
-    </ClCompile>
-    <ClCompile Include="allegro\src\sound.c">
       <Filter>Source Files\allegro\src</Filter>
     </ClCompile>
     <ClCompile Include="allegro\src\spline.c">

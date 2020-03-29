@@ -172,7 +172,7 @@
     <ClCompile Include="allegro\src\clip3df.c" />
     <ClCompile Include="allegro\src\colblend.c" />
     <ClCompile Include="allegro\src\color.c" />
-    <ClCompile Include="allegro\src\config.c" />
+    <ClCompile Include="allegro\src\allegro_config.c" />
     <ClCompile Include="allegro\src\c\cblit16.c" />
     <ClCompile Include="allegro\src\c\cblit24.c" />
     <ClCompile Include="allegro\src\c\cblit32.c" />
@@ -225,7 +225,7 @@
     <ClCompile Include="allegro\src\guiproc.c" />
     <ClCompile Include="allegro\src\inline.c" />
     <ClCompile Include="allegro\src\joystick.c" />
-    <ClCompile Include="allegro\src\keyboard.c" />
+    <ClCompile Include="allegro\src\allegro_keyboard.c" />
     <ClCompile Include="allegro\src\lbm.c" />
     <ClCompile Include="allegro\src\libc.c" />
     <ClCompile Include="allegro\src\lzss.c" />
@@ -236,7 +236,7 @@
     <ClCompile Include="allegro\src\misc\colconv.c" />
     <ClCompile Include="allegro\src\mixer.c" />
     <ClCompile Include="allegro\src\modesel.c" />
-    <ClCompile Include="allegro\src\mouse.c" />
+    <ClCompile Include="allegro\src\allegro_mouse.c" />
     <ClCompile Include="allegro\src\pcx.c" />
     <ClCompile Include="allegro\src\poly3d.c" />
     <ClCompile Include="allegro\src\polygon.c" />
@@ -248,7 +248,7 @@
     <ClCompile Include="allegro\src\rle.c" />
     <ClCompile Include="allegro\src\rotate.c" />
     <ClCompile Include="allegro\src\scene3d.c" />
-    <ClCompile Include="allegro\src\sound.c" />
+    <ClCompile Include="allegro\src\allegro_sound.c" />
     <ClCompile Include="allegro\src\spline.c" />
     <ClCompile Include="allegro\src\stream.c" />
     <ClCompile Include="allegro\src\text.c" />
