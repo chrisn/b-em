@@ -16,7 +16,7 @@
  */
 
 
-#define DIRECTINPUT_VERSION 0x0300
+#define DIRECTINPUT_VERSION 0x0800
 
 #include "allegro.h"
 #include "allegro/internal/aintern.h"
@@ -606,7 +606,7 @@ static int mouse_dinput_init(void)
    };
 
    /* Get DirectInput interface */
-   hr = DirectInputCreate(allegro_inst, DIRECTINPUT_VERSION, &mouse_dinput, NULL);
+   hr = DirectInput8Create(allegro_inst, DIRECTINPUT_VERSION, &IID_IDirectInput8A, &mouse_dinput, NULL);
    if (FAILED(hr))
       goto Error;
 

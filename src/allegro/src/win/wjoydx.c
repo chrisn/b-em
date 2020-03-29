@@ -19,7 +19,7 @@
  */
 
 
-#define DIRECTINPUT_VERSION 0x0500
+#define DIRECTINPUT_VERSION 0x0800
 
 #include "allegro.h"
 #include "allegro/internal/aintern.h"
@@ -438,12 +438,12 @@ static int joystick_dinput_init(void)
       return -1;
 
    /* get the DirectInput interface */
-   hr = DirectInputCreate(allegro_inst, DIRECTINPUT_VERSION, &joystick_dinput, NULL);
+   hr = DirectInput8Create(allegro_inst, DIRECTINPUT_VERSION, &IID_IDirectInput8A, &joystick_dinput, NULL);
    if (FAILED(hr))
       return -1;
 
    /* enumerate the joysticks attached to the system */
-   hr = IDirectInput_EnumDevices(joystick_dinput, DIDEVTYPE_JOYSTICK, joystick_enum_callback, NULL, DIEDFL_ATTACHEDONLY);
+   hr = IDirectInput_EnumDevices(joystick_dinput, DI8DEVCLASS_GAMECTRL, joystick_enum_callback, NULL, DIEDFL_ATTACHEDONLY);
    if (FAILED(hr)) {
       IDirectInput_Release(joystick_dinput);
       return -1;
