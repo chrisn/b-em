@@ -26,6 +26,7 @@
 
 #pragma warning (disable: 4200 4244 4305)
 
+#define ALLEGRO_HAVE_STDINT_H 1
 
 /* describe this platform */
 #ifdef ALLEGRO_STATICLINK
@@ -76,9 +77,10 @@
 #define INLINE       __inline
 
 #define LONG_LONG    __int64
+/*
 #define int64_t      signed __int64
 #define uint64_t     unsigned __int64
-
+*/
 #define AL_CONST     const
 
 
