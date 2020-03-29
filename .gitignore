@@ -29,6 +29,7 @@ config.status
 Makefile
 .deps
 .dirstamp
+src/.vs
 
 # b-em
 cmos*.bin
