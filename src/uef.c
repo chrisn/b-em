@@ -51,10 +51,11 @@ void uef_close()
         }
 }
 
-int infilenames = 0;
-int uefloop = 0;
-uint8_t fdat;
-int ffound;
+static int infilenames = 0;
+static int uefloop = 0;
+static uint8_t fdat;
+static int ffound;
+
 static void uef_receive(uint8_t val)
 {
         uef_toneon--;
